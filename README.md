@@ -1,25 +1,29 @@
-🏨 OYO Rooms End-to-End Data Analysis Project
+<div align="center">
+🏨 OYO Rooms — End-to-End Data Analysis Project
+
+📊 Exploratory Data Analysis | 💡 Business Insights | 🧠 Data-Driven Decisions
+
+</div>
 📌 Project Overview
 
 This project presents a complete end-to-end Exploratory Data Analysis (EDA) of OYO Rooms hotel data.
 The analysis focuses on understanding how pricing, hotel type, city, amenities, and customer ratings influence hotel popularity and customer decision-making.
 
-The project follows a real-world data analytics lifecycle, starting from raw scraped data and ending with meaningful business insights.
+The project follows a real-world data analytics lifecycle, starting from raw scraped data and ending with actionable business insights.
 
 ❓ Business Problem
 
-OYO operates across multiple cities with different hotel categories.
-However, customers and businesses face challenges such as:
+OYO operates across multiple cities with diverse hotel categories. However, both customers and business teams face challenges such as:
 
-Large price variation for similar hotels
+Wide price variation for similar hotels
 
-Difficulty understanding how hotel type affects pricing
+Difficulty understanding how hotel type impacts pricing
 
-Unclear relationship between ratings and actual popularity
+Unclear relationship between ratings and popularity
 
 Limited visibility into the role of amenities
 
-This project aims to uncover data-driven answers to these challenges.
+This project aims to uncover data-driven explanations behind these patterns.
 
 🎯 Project Objectives
 
@@ -27,119 +31,103 @@ Analyze hotel price variation across cities
 
 Understand pricing behavior across hotel categories
 
-Study customer ratings and review patterns
+Study customer ratings and review trends
 
 Evaluate the impact of amenities on hotel popularity
 
-Identify key drivers influencing hotel pricing and popularity
+Identify key drivers influencing pricing and customer preference
 
 📊 Data Collection
 
-Data was collected from the OYO Rooms website
+Data collected from the OYO Rooms website
 
-Only publicly visible hotel information was used
+Only publicly available hotel information was used
 
-The dataset represents a snapshot of hotel listings across multiple cities and hotel types
+Dataset represents a snapshot of hotels across multiple cities and hotel types
 
 🧾 Dataset Overview
 
-The dataset contains hotel-level information related to pricing, location, customer feedback, and amenities.
-It also includes derived features created during preprocessing to support deeper analysis.
+The dataset contains hotel-level information related to pricing, location, customer feedback, and amenities, along with derived analytical features created during preprocessing.
 
 📋 Column Summary
 🏨 Hotel Information
 
-Hotel_Name
-Name of the hotel as listed on the OYO platform.
+Hotel_Name – Name of the hotel as listed on the platform
 
-Hotel_Type
-Category of the hotel such as Townhouse, Collection O, Super OYO, or OYO Flagship.
-This reflects the service level and brand positioning of the property.
+Hotel_Type – Category such as Townhouse, Collection O, Super OYO, OYO Flagship
 
-City
-City in which the hotel is located.
+City – City where the hotel is located
 
-Location
-Specific area or locality within the city.
+Location – Specific locality within the city
 
 💰 Pricing Details
 
-Final_Price
-The actual price paid by the customer after applying discounts and offers.
+Final_Price – Actual price paid after discounts
 
-Original_Price
-The listed price before discounts were applied.
+Original_Price – Price before discounts
 
-Discount
-The price difference between the original price and the final price.
+Discount – Difference between original and final price
 
-Taxes
-Additional taxes applied to the booking amount.
+Taxes – Additional taxes applied
 
-Price_Category
-A derived column grouping hotels into Low, Medium, or High price ranges.
+Price_Category – Derived grouping: Low, Medium, High
 
 ⭐ Customer Ratings & Reviews
 
-Rating
-Average customer rating given to the hotel.
+Rating – Average customer rating
 
-Number_of_Ratings
-Total number of customer reviews submitted for the hotel.
+Number_of_Ratings – Total customer reviews
 
-Rating_Category
-A derived column classifying ratings into categories such as Poor, Average, Good, and Excellent.
+Rating_Category – Derived grouping: Poor, Average, Good, Excellent
 
 🏷 Amenities & Popularity
 
-Amenity_Count
-Total number of amenities offered by the hotel.
+Amenity_Count – Total number of amenities offered
 
-Popularity_Score
-A derived metric combining rating and number of ratings to represent overall customer popularity.
+Popularity_Score – Derived metric combining ratings and review volume
 
 🧹 Data Cleaning & Preprocessing
 
-The raw data was text-heavy and unstructured, requiring extensive preprocessing:
+The raw data was unstructured and text-heavy, requiring multiple preprocessing steps:
 
-Removal of missing values and duplicates
+Removal of duplicates and missing values
 
-Conversion of price and rating fields into numeric format
+Conversion of pricing and rating fields into numeric formats
 
-Standardization of city names and hotel types
+Standardization of city names and hotel categories
 
-Creation of derived columns for analytical purposes
+Creation of derived analytical features
 
 Cleaning of noisy text fields
 
 🔤 Use of Regular Expressions (Regex)
 
-Regular Expressions were used to clean and transform raw scraped data:
+Regex was used extensively to clean and structure scraped data:
 
 Extracting numeric values from price strings
 
 Cleaning rating and review text
 
-Identifying hotel types from hotel names
+Identifying hotel categories from hotel names
 
 Removing unwanted symbols and inconsistencies
 
-Regex played a key role in improving data quality, accuracy, and consistency.
+Regex significantly improved data quality and reliability.
 
 📈 Exploratory Data Analysis (EDA)
 🔹 Univariate Analysis
 
-Distribution of hotel prices
+Price distribution
 
-Distribution of customer ratings
+Rating distribution
 
-Frequency of hotel types
+Hotel type frequency
 
 Amenity count distribution
 
 🔹 Bivariate Analysis
 
-City vs final hotel price
+City vs hotel price
 
 Hotel type vs pricing
 
@@ -149,33 +137,33 @@ Amenity count vs popularity
 
 🔹 Multivariate Analysis
 
-Combined impact of city, hotel type, and price
+Combined effect of city, hotel type, and price
 
 Relationship between hotel type, rating, and popularity
 
-Influence of amenities, ratings, and price together
+Influence of amenities, ratings, and pricing together
 
 📌 Key Insights
 
-Hotel prices vary significantly across cities
+Hotel pricing varies significantly across cities
 
-Hotel type is a strong determinant of pricing
+Hotel type strongly influences pricing
 
-Higher ratings do not always lead to higher prices
+Higher ratings do not always mean higher prices
 
-Hotels offering more amenities tend to achieve higher popularity
+Hotels with more amenities tend to be more popular
 
-Some budget hotels outperform premium hotels due to value-for-money offerings
+Some budget hotels outperform premium hotels due to value-for-money
 
 🧠 Business Recommendations
 
 Optimize pricing strategies based on city-level demand
 
-Improve amenity offerings to boost hotel popularity
+Improve amenity offerings to boost popularity
 
-Promote high-performing budget hotels for customer acquisition
+Promote high-performing budget hotels
 
-Use popularity score alongside ratings for better decision-making
+Use popularity score alongside ratings for decision-making
 
 🛠 Tools & Technologies Used
 
@@ -196,16 +184,19 @@ Jupyter Notebook
 
 📌 Future Scope
 
-Price prediction using machine learning models
+Price prediction using machine learning
 
 Customer segmentation and clustering
 
 Time-based pricing analysis
 
-Interactive dashboards using Power BI or Tableau
+Interactive dashboards (Power BI / Tableau)
 
+<div align="center">
 👤 Author
 
 Vamshidhar Masireddy
 Aspiring Data Scientist | Data Analyst
 Python | SQL | Power BI
+
+</div>
